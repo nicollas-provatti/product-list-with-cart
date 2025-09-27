@@ -11,8 +11,8 @@ export default function Header() {
   );
  
   return (
-    <header className="sticky top-0 bg-[var(--fundo-secundario)] z-10 flex items-center justify-between px-[10%] py-4 shadow-[var(--sombra)]   xl:static">
-      <button className="text-[var(--destaque)] bg-[var(--fundo-principal)] rounded-2xl p-2">
+    <header className="sticky top-0 bg-[var(--fundo-secundario)] z-10 flex items-center justify-between px-[5%] py-4 shadow-[var(--sombra)] md:px-[10%]  xl:static">
+      <button className="text-[var(--destaque)] bg-[var(--fundo-principal)] rounded-2xl p-2 ">
         <IconTheme />
       </button>
       <h1 className="text-[var(--texto-principal)] font-bold text-3xl md:text-4xl xl:text-5xl xl:-order-1">

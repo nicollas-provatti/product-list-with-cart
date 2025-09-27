@@ -14,7 +14,7 @@ export default function ModalCartMobile() {
 
   return (
     <dialog id="my_modal_1" className="modal modal-bottom sm:modal-middle">
-      <div className="modal-box p-0 pl-3.5 py-6 bg-[var(--fundo-principal)] ">
+      <div className="modal-box p-0 px-3.5 py-6 bg-[var(--fundo-principal)] ">
         <Cart mobile />
       </div>
     </dialog>

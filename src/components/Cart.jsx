@@ -35,7 +35,7 @@ export default function Cart({ mobile }) {
     <>
       {mobile && (
         <form method="dialog">
-          <button className="absolute border border-[var(--destaque)] text-[var(--texto-botao-fechar)] right-3 top-9 bg-[var(--fundo-botao-fechar)] btn-sm btn-circle cursor-pointer transition-all duration-150 ease-in hover:text-[var(--hover-texto-botao-fechar)] hover:bg-[var(--hover-fundo-botao-fechar)]">
+          <button className="absolute border border-[var(--destaque)] text-[var(--texto-botao-fechar)] right-6 top-9 bg-[var(--fundo-botao-fechar)] btn-sm btn-circle cursor-pointer transition-all duration-150 ease-in hover:text-[var(--hover-texto-botao-fechar)] hover:bg-[var(--hover-fundo-botao-fechar)]">
             ✕
           </button>
         </form>
