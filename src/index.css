@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  --fundo-principal: #f4edeb;
+  --fundo-secundario: #fcf9f7;
+  --texto-principal: #260f08;
+  --texto-secundario: #87635a;
+  --texto-terciario: #ad8985;
+  --destaque: #c73a0f;
+  --fundo-botao: #fff;
+  --fundo-carro: #fff;
+  --botao-remover: #ad8985;
+  --botao-remover-hover-texto: #fff;
+  --botao-remover-hover-fundo: #ad8985;
+  --borda: #ddbfba;
+  --fundo-botao-destaque: #c73a0f;
+  --texto-botao-destaque: #fff;
+  --fundo-hover-botao-destaque: #e24110;
+  --fundo-modal: #fff;
+  --sombra: 0 2px 12px rgba(0, 0, 0, 0.2);
+  --fundo-botao-fechar: #fff;
+  --texto-botao-fechar: #c73a0f;
+  --hover-fundo-botao-fechar: #c73a0f;
+  --hover-texto-botao-fechar: #fff;
+}
+
+:root[data-theme="dark"] {
+  --fundo-principal: #121212; 
+  --fundo-secundario: #1e1e1e;
+  --texto-principal: #f4edeb; 
+  --texto-secundario: #cbbab4;
+  --texto-terciario: #9e8f89; 
+  --destaque: #de552b; 
+  --fundo-botao: #2a2a2a; 
+  --fundo-carro: #1c1c1c;
+  --borda: #3a3a3a;
+  --fundo-botao-destaque: #de552b;
+  --fundo-hover-botao-destaque: #d04217;
+  --fundo-modal: #1e1e1e;
+  --sombra: 0 2px 8px rgba(255, 255, 255, 0.1);
+  --fundo-botao-fechar: #1e1e1e;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  background-color: var(--fundo-principal);
+  transition: all 0.3s ease;
+}
