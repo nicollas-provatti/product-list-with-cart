@@ -8,6 +8,9 @@ import IconIncrementQuantity from "./Icons/IconIncrementQuantity";
 export default function Dissert({ dissert }) {
   const { items, addItem, removeItem } = useContext(CartContext);
 
+  let dissertClasses =
+    "overflow-hidden shadow-md rounded-xl bg-[var(--fundo-secundario)]";
+
   const botaoClasses =
     "group absolute -bottom-6 left-[50%] -translate-x-[50%] flex justify-between  items-center  rounded-full border px-6 py-3 border-[var(--destaque)] font-semibold xl:px-8 xl:py-4 hover:bg-[var(--destaque)] hover:text-[var(--texto-botao-hover)] transition-all duration-150 ease-in";
 
@@ -20,8 +23,13 @@ export default function Dissert({ dissert }) {
 
   const item = items.find((item) => item.name === name);
 
+  if (item?.quantity) {
+    dissertClasses =
+      "overflow-hidden outline-2 outline-[var(--destaque)] shadow-md rounded-xl bg-[var(--fundo-secundario)]";
+  }
+
   return (
-    <div className="overflow-hidden shadow-md rounded-xl bg-[var(--fundo-secundario)]">
+    <div className={dissertClasses}>
       <div className="relative mb-8">
         <picture>
           <source media="(max-width: 640px)" srcSet={mobile} />
@@ -46,7 +54,10 @@ export default function Dissert({ dissert }) {
               " gap-9 text-[var(--texto-botao-destaque)] bg-[var(--fundo-botao-destaque)]"
             }
           >
-            <button className="cursor-pointer" onClick={() => removeItem(item.id)}>
+            <button
+              className="cursor-pointer"
+              onClick={() => removeItem(item.id)}
+            >
               <IconDecrementQuantity />
             </button>
             <p>{item.quantity}</p>
