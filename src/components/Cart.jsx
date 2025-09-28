@@ -58,7 +58,7 @@ export default function Cart({ mobile }) {
         {items.length > 0 && (
           <div className="flex flex-col w-full gap-6">
             {items.map((item) => (
-              <CartItem item={item} />
+              <CartItem key={item.id} item={item} />
             ))}
             <div className="flex items-center justify-between mt-3">
               <p className="text-[var(--texto-principal)]">Order Total</p>
